@@ -1,0 +1,3 @@
+here we can use our pointer 
+
+in the form off pointer to access elements
