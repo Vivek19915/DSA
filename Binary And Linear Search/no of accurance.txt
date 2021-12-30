@@ -1,0 +1,22 @@
+for eg :-
+hame ek array given h 
+array[]={1,2,3,4,4,4,5};
+AUR HAME YE NIKALNA H KI 4 KITNI BAAR OCCUR HUAA H ;
+
+
+TOH METHOD 1:-
+BYY USING LINEAR SEARCH 
+key ko leakar pure array me traverse karege aur count ++ kar dene se aa jayega 
+
+but isme T.C. big O of n ho jayega toh dikkat jo jayegi 
+
+
+SO WE GO TO METHOD 2 :-
+BYY USING BUNARY SEARCH
+
+phle vale code ka usee karke {{ fist andd last occurance vala }} 
+hamne 4 ki first and last occurance nikal jayegi
+
+therfore 
+{{{{{{{{{{{{{{{{{{{{{{   OCCURANCE  =  last -first +1    }}}}}}}}}}}}}}}}}}}}}}
+BAS YAHI HAMARA ANSWER HOGA 
