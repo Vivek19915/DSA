@@ -95,7 +95,7 @@ int lastOccurance(int array[],int size_of_array,int key){
                 end  = mid -1;
             }
         } return answer;   
-}
+}   
 
 int main(){
     int array[]={1,2,3,4,4,4,5};
