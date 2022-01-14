@@ -4,7 +4,7 @@ using namespace std;
 
 //HERE WE CREATED INLINE FUNCTION
 inline int getMax(int& a, int& b) {
-    return (a>b) ? a : b;   //HERE WE USE TERTIORY OPERRATOR
+    return (a>b) ? a : b;   //HERE WE USE 🔥🔥🔥🔥TERTIORY OPERRATOR🔥🔥🔥🔥
                             //MEANING OF THIS (a>b) ? a : b
                             // if (a>b)        
                             // {
