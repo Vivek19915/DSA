@@ -1,7 +1,9 @@
 #include<iostream>
 using namespace std;
 
-int linearSearchme(int *arr,int size,int key,int index ){
+
+//here we use default argument for index 
+int linearSearchme(int *arr,int size,int key,int index=0 ){
     
     if (size==0)
     {
@@ -40,7 +42,7 @@ int linearSearchbabbar(int *arr,int size,int key){
 int main(){
     int arr[5]={1,2,3,4,5};
     int key  = 2;
-    int z = linearSearchme(arr,5,key,0);
+    int z = linearSearchme(arr,5,key);
     int y = linearSearchbabbar(arr,5,key);
     cout<<z<<" "<<y<<endl;
 }

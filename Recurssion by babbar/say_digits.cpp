@@ -4,34 +4,57 @@
 
 #include<iostream>
 using namespace std;
-//using head recurssion will give true answer
-// if we use tail recurssion we get  reversed answer
 
-void sayDigits(int num,string arr[]){
-    //bas case
-    if (num==0)
-    {
-        return;
-    }
-    //processing part 
-    int digit  = num%10;
-    num = num/10;
+//when we used head recurssion
+void saydigitshead(string arr[],int num){
+	//base cond
+	if (num==0)
+	{
+		return ;
+	}
 
-    // //head RR
-    sayDigits(num,arr);
-    //printing part 
-    cout<<arr[digit]<<" ";
-
-    //tail RR
-    // sayDigits(num,arr);
+	else
+	{
+		int digit = num%10;
+		num=num/10;
+		//this is head rr because function call is before printing
+		saydigitshead(arr,num);
+		cout<<arr[digit]<<" ";
+	}
 }
+
+
+//when we used tail recurssion
+void saydigitstail(string arr[],int num){
+	//base cond
+	if (num==0)
+	{
+		return ;
+	}
+
+	else
+	{
+		int digit = num%10;
+		num=num/10;
+		//this is tail rr because function call is after printing
+		cout<<arr[digit]<<" ";
+		saydigitshead(arr,num);
+		
+	}
+}
+
 
 
 int main(){
-    int num;
-    cin>>num;
-    string arr[10] = {"zero","one","two","three","four","five",
+	string str[10] = {"zero","one","two","three","four","five",
                         "six","seven","eight","nine"};
-  sayDigits(num,arr);
+	int num;
+	cin>>num;
+	saydigitshead(str,num);
+	saydigitstail(str,num);
 
 }
+//therfore in outpit you can see that head recurssion is used to print 
+//in bacward way 
+
+//while head recurssion is used to print it in forward way

@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-
-int findsum1(int arr[],int size,int sum,int index){
+//here we use default argument for index 
+int findsum1(int arr[],int size,int sum,int index=0){
     //to stop RR
     
     if (size==0)
@@ -32,6 +32,6 @@ int findsum2(int *arr,int size,int sum){
 
 int main(){
         int arr[6]={1,2,3,4,5,6};
-        cout<<findsum1(arr,6,0,0)<<endl;
+        cout<<findsum1(arr,6,0)<<endl;
         cout<<findsum2(arr,6,0);
 }
