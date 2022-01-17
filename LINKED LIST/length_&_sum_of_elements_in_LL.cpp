@@ -20,7 +20,7 @@ while (x)
     cin>>newnode->data;
     if (head==NULL)
     {
-        head =temp=newnode;
+        head =temp;
     }
     else
     {
@@ -32,17 +32,15 @@ while (x)
 }
 temp = head;
 int sum=0,length = 0;
+
 while (temp!=0)
 {
     sum=sum+temp->data;
     length++;
-    // cout<<"length "<<length<<"sum= "<<sum<<endl;
+    cout<<"length "<<length<<"sum= "<<sum<<endl;
     temp=temp->next;
 }
 
 cout<<"length "<<length<<"sum= "<<sum;
-
-
-
 
 }
