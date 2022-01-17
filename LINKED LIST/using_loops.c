@@ -20,6 +20,7 @@ int main(){
         printf("ENter data please \n");
         scanf("%d",&newnode->data);
         newnode->next =NULL;
+        //🔥🔥🔥taki next node null ho jaye aur jab hum traverse kare to stop karne ke kaam ayega 🔥🔥🔥🔥
         if (head==NULL){
             head  = temp =newnode;  //aur iske baad head change nhi hoga 
             //yahi imp h traversing ke liye ke apna head change nhi hona chahiye

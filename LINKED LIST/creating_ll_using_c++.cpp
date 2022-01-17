@@ -35,6 +35,7 @@ int main(){
         newnode = new struct node;
         cout<<"Enter data "<<endl;
         cin>>newnode->data;
+        newnode->nextnode =NULL;
         if (head==NULL)
         {
             head  = temp = newnode; //newnode ka address head aur temp dono me aa gaya h 

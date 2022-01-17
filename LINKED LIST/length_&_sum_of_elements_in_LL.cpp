@@ -18,6 +18,9 @@ while (x)
     newnode = new struct node;
     cout<<"Enter data"<<endl;
     cin>>newnode->data;
+    newnode->next =NULL;
+    //🔥🔥🔥taki next node null ho jaye aur jab hum traverse kare to stop 
+    //karne ke kaam ayega 🔥🔥🔥🔥
     if (head==NULL)
     {
         head =temp;
@@ -37,7 +40,7 @@ while (temp!=0)
 {
     sum=sum+temp->data;
     length++;
-    cout<<"length "<<length<<"sum= "<<sum<<endl;
+    cout<<"<<length="<<"sum= "<<sum<<endl;
     temp=temp->next;
 }
 

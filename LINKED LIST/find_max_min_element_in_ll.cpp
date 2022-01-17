@@ -31,6 +31,9 @@ int main(){
         newnode = new struct node;
         cout<<"Enter data"<<endl;
         cin>>newnode->data;
+        newnode->next =NULL;
+        //🔥🔥🔥taki next node null ho jaye aur jab hum traverse kare to stop 
+        //karne ke kaam ayega 🔥🔥🔥🔥
         if (head==0)
         {
             head=temp=newnode;
@@ -45,7 +48,7 @@ int main(){
     }
     //fnding max element using loops
     temp = head;
-    int max = -32768; //or max= -32768
+    int max = 0; //or max= -32768
     while (temp!=NULL)
     {
         if (max<temp->data)
