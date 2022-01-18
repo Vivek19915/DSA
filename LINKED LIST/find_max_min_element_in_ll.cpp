@@ -12,10 +12,9 @@ struct node
 //     {
 //         if (max<start->data)
 //         {
-//             max = start->data;
-//             start=start->next;
+//             max = start->data;   
 //         }
-        
+//       start=start->next;      
 //     }
 //     return max;
 // }
@@ -34,7 +33,7 @@ int main(){
         newnode->next =NULL;
         //🔥🔥🔥taki next node null ho jaye aur jab hum traverse kare to stop 
         //karne ke kaam ayega 🔥🔥🔥🔥
-        if (head==0)
+        if (head==NULL)
         {
             head=temp=newnode;
         }
@@ -48,15 +47,14 @@ int main(){
     }
     //fnding max element using loops
     temp = head;
-    int max = 0; //or max= -32768
-    while (temp!=NULL)
+    int max = INT32_MIN; //or max= -32768
+    while (temp)
     {
         if (max<temp->data)
         {
             max = temp->data;
-            temp=temp->next;
         }
-        
+        temp=temp->next;
     }
     cout<<max<<endl;
 

@@ -18,12 +18,12 @@ while (x)
     newnode = new struct node;
     cout<<"Enter data"<<endl;
     cin>>newnode->data;
-    newnode->next =NULL;
+    newnode->next=NULL;
     //🔥🔥🔥taki next node null ho jaye aur jab hum traverse kare to stop 
     //karne ke kaam ayega 🔥🔥🔥🔥
     if (head==NULL)
     {
-        head =temp;
+        head =temp=newnode;
     }
     else
     {
