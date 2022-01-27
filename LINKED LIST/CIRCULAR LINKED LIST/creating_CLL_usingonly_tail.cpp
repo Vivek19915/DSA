@@ -33,14 +33,14 @@ void createCLL(){
 }
 
 void displaycll(){
-    struct node*temp= tail->next;
+    struct node*temp= tail;
     if (temp==NULL)
     {
         cout<<"CLL not formed";
     }
     else
     {
-        while (temp!=tail)
+        while (temp->next!=tail)
         {
             cout<<temp->data<<" ";
             temp=temp->next;
