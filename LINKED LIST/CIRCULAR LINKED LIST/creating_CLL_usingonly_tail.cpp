@@ -11,7 +11,7 @@ void createCLL(){
     int choice =1;
     while (choice)
     {
-         newnode = new struct node;
+        newnode = new struct node;
         cout<<"enter data"<<endl;
         cin>>newnode->data;
         newnode->next=NULL;
@@ -33,14 +33,14 @@ void createCLL(){
 }
 
 void displaycll(){
-    struct node*temp= tail;
+    struct node*temp= tail->next;
     if (temp==NULL)
     {
         cout<<"CLL not formed";
     }
     else
     {
-        while (temp->next!=tail)
+        while (temp!=tail)
         {
             cout<<temp->data<<" ";
             temp=temp->next;
