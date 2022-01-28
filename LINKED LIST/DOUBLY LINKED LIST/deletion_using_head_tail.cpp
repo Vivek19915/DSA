@@ -43,7 +43,8 @@ void display(){
     }cout<<endl;   
 }
 
-void delete_AT_beg(){
+void delete_AT_beg(){//
+    //we store in temp to free that memory
     struct node * temp =head;
     if (head==0)
     {
@@ -80,6 +81,7 @@ void delete_at_position(){
     for (int i = 1; i < position; i++)
     {
         temp =temp->next;
+        //🔥🔥🔥since we have to free that memory therfreo we strore it int a🔥🔥🔥
         a=temp;
     }
     //logic
