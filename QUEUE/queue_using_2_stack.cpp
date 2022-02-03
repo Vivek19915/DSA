@@ -46,25 +46,24 @@ void dequeue()
 
 void display(){
     
-    
+    for (int k2 = 0; k2<=top2; k2++)
+    {
+        cout<<stack2[k2]<<" ";
     for (int k1 = top1 ; k1>-1; k1--)
     {
         cout<<stack1[k1]<<" ";
     }
-    for (int k2 = 0; k2<=top2; k2++)
-    {
-        cout<<stack2[k2]<<" ";
     }cout<<endl;
 }
 
 void peek(){
     if (top2!=-1)
     {
-        cout<<"peek element "<< stack2[0]<<endl;
+        cout<<"peek element "<< stack1[top1]<<endl;
     }
     else
     {
-       cout<<"peek element "<< stack1[top1]<<endl;
+       cout<<"peek element "<< stack2[0]<<endl;
     }
 }
 
