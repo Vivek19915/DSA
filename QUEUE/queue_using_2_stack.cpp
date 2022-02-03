@@ -57,12 +57,13 @@ void display(){
 }
 
 void peek(){
-    if (top2!=-1)
-    {
+    if (top2==-1)
+    {   //mltb abhi stack 2 pura empty h 
         cout<<"peek element "<< stack1[top1]<<endl;
     }
     else
-    {
+    {   //mtlb stack2 empty nhi h 
+    //toh uska bottom elemnt will we our peek element
        cout<<"peek element "<< stack2[0]<<endl;
     }
 }
