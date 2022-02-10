@@ -34,7 +34,8 @@ int main(){
     }cout<<endl;
     //now k largest element
     cout<<"K laregest element of array are"<<endl;
-    for (int i = 0; minheap.size()>0; i++)
+    int size =minheap.size();
+    for (int i = 0; i<size; i++)
     {
         cout<<minheap.top()<<" ";
         minheap.pop();
