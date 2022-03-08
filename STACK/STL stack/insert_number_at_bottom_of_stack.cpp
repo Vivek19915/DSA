@@ -9,11 +9,12 @@
 #include<stack>
 using namespace std;
 
-void insert_num_at_bottom(stack<int>& s,int num){
+void insert_num_at_bottom(stack<int> &s, int num){
     //base condition
-    if (s.size())
+    if (s.empty())
     {   //mltb stack apna empty ho gya h 
         s.push(num);
+        return ;
     }
 
     int a= s.top();
@@ -44,11 +45,11 @@ int main(){
     insert_num_at_bottom(s1,num);
 
     //now we print our stack
+    cout<<"NEW STACK"<<endl;
     while (s1.size())
     {
         cout<<s1.top()<<endl;
         s1.pop();
-    }cout<<endl;
-    
-
+    }
+    cout<<endl;
 }
