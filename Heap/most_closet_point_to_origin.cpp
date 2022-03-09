@@ -26,5 +26,4 @@ int main()
     //now jo bhi apna top element hoga vahi sabse closest hoga origin ke 
     cout<<"closest point to origin =  ";
     cout<<minheap.top().second.first<<"  "<<minheap.top().second.second<<endl;
-
 }
