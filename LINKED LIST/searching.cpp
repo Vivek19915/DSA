@@ -58,7 +58,6 @@ int main(){
     while (x)
     {
         newnode = new struct node;
-        newnode = new struct node;
         cout<<"Enter data"<<endl;
         cin>>newnode->data;
         newnode->next =NULL;
