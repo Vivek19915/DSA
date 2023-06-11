@@ -63,14 +63,12 @@ void insert_at_end(){
     tail=newnode;
 }
 
-void insert_at_position(int reg_no){
-    struct node * temp = head;
-    while (temp->data!=reg_no)
-    {
-        temp=temp->next;
-    }
-    
+void insert_at_position(){
+    int position;
+    cout<<"Enter the position at which u want tot insert data"<<endl;
+    cin>>position;
     struct node * newnode  =  new struct node;
+    cout<<"Enter the data at "<<position<<"position"<<endl;
     cin>>newnode->data;
     struct node * temp  = head;
     //now we have to traverse to that position
